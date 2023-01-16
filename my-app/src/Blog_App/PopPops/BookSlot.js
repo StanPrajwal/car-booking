@@ -1,9 +1,10 @@
 import {Box, Button, MenuItem, TextField} from "@mui/material"
 import Axios from "axios"
 import {useState} from "react"
-
+import dotenv from "dotenv"
 import "./BookSlot.css"
 function BookSlot({states,getCars,cars}){
+    dotenv.config()
     const [state,setState] = useState("")
     const [city,setCity] = useState()
     const [cities,setCities] = useState()
@@ -26,7 +27,7 @@ function BookSlot({states,getCars,cars}){
                 currency: 'INR'
                 },
                 headers: {
-                'X-RapidAPI-Key': '57e3b37a98msh43da765f47c1b98p1cd935jsnaac1744ff62c',
+                'X-RapidAPI-Key': process.env.Rapid_key,
                 'X-RapidAPI-Host': 'booking-com.p.rapidapi.com'
                 }
             };

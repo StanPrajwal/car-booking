@@ -1,0 +1,116 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.main-section{
+    height: 100vh;
+    background-color: #ffff;
+    position: relative;
+}   
+.slot-book{
+    /* display: flex;
+    gap: 1rem; */
+    
+
+}
+.detail-title{
+    padding: 1rem;
+    text-align: center;
+    color: rgb(5, 16, 53);
+
+}
+.detail-image{
+    /* box-shadow: 20px 10px 4px 10px rgba(0, 0, 0, 0.45); */
+}
+.details-contaainer{
+   padding: 2rem;
+    display: grid;
+    grid-template-columns:50% 40%;
+    gap:2rem;
+}
+.details-contaainer img{
+    width: 100%;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.45);
+    mix-blend-mode: multiply;
+    border-radius: 1rem;
+   
+}
+/* .details-contaainer .details{
+    width: 50%;
+} */
+.details-contaainer .details p{
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.slot-book{
+    padding: 2rem;
+    text-align: center;
+}
+.slot{
+    width: 200px;
+    background-color: rgb(235, 209, 238);
+}
+.slot legend{
+    color: rgb(150, 5, 29);
+    font-weight: 800;
+}
+.slot input{
+    border: none;
+    outline: none;
+    width:100%;
+    font-size: large;
+    background-color: transparent;
+
+}
+.Payment{
+    width: 100%;
+    box-shadow: 10px 6px 10px 10px rgba(0, 0, 0, 0.45);
+    padding: 1rem;
+    text-align: center;
+    
+    background-color: rgb(243, 139, 208);
+    box-sizing: border-box;
+
+}
+.pay{
+    color:red;
+    font-weight: 700;
+}
+.pay span{
+    color : blue;
+  
+}
+.pay-symbol{
+    vertical-align: middle;
+}
+#proceed{
+    width:150px;
+    border-radius: 1rem;
+    
+}
+#car-name{
+    color: rgb(66, 66, 66);
+    padding: 1rem 0;
+}
+#address{
+    color: rgb(4, 134, 22);
+}
+@media only screen and (min-width:200px) and (max-width:450px){
+    .details-contaainer{
+        display: block;
+     }
+    
+    .slot{
+        width:100%
+    }
+}
+@media only screen and (min-width:450px) and (max-width:720px){
+    .details-contaainer{
+        display: block;
+     }
+     
+    .slot{
+        width:100%
+    }
+
+}

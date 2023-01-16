@@ -1,0 +1,46 @@
+.pop-box{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:30%;
+    height: 55vh;
+    text-align: center;
+    box-shadow: 10px 7px 7px 7px rgba(0, 0, 0, 0.450) ;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    background-color: white;
+    visibility: hidden;
+    transition:transform 0.4s,top 0.4s;
+}
+#pop{
+    top:50%;
+    visibility:visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+.circle{
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: rgb(9, 231, 9);
+ 
+}
+#check{
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+
+}
+#check-icon{
+    vertical-align: middle;
+    
+}
+.pop-box h4{
+    font-size: 25px;
+    
+    color: rgb(231, 23, 58);
+
+}

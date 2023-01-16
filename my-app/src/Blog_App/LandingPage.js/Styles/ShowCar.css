@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.car-container{
+    padding: 1rem;
+}
+.image{
+    
+    width:100%;
+   
+}
+.show-cars{
+    color: rgb(129, 7, 78);
+    font-family: cursive;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1.5rem;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+}
+.card h2{
+   color: rgb(12, 2, 22);
+   text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 13px 20px 15px 6px rgba(0, 0, 0, 0.344);
+    transition: .15s;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    background-color: rgb(99, 79, 79);
+    
+}
+.card:hover{
+    background-color: rgb(34, 28, 33);
+    color: white;
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+.card .card-title,.card p{
+    padding: 0.5rem 1rem;
+    text-align: justify;
+}
+.card p{
+    font-size: 15px;
+}
+.card img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+.showcars-container{
+    position: relative;
+}
+@media only screen and (min-width:200px) and (max-width:450px){
+    
+    .show-cars{
+        display: block;
+    }
+    .card p{
+        font-size: 12px;
+    }
+    .card h2{
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width:450px) and (max-width:720px){
+    .show-cars{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+    .card p{
+        font-size: 10px;
+    }
+    .card h2{
+        font-size: 15px;
+    }
+
+}

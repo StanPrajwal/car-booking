@@ -1,0 +1,80 @@
+header{
+    padding: 1.5rem;
+    background: linear-gradient(rgb(5, 5, 51),rgb(195, 162, 226));
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    color: white;
+    
+    
+    
+}
+.nav-links a{
+    color: white;
+    margin-left: 2rem;
+    padding: 1rem;
+    text-decoration: none;
+    transition: 0.15s;
+
+}
+#rapid{
+    font-size: large;
+    font-weight: bold;
+    vertical-align: middle;
+
+}
+#qube{
+    font-size: xx-large;
+    font-weight: bold;
+    vertical-align: middle;
+    color: rgb(26, 6, 134);
+}
+
+
+.nav-links{
+    display: inline-block;
+    float:right;
+    
+}
+
+.nav-links a:hover{
+    color:rgb(0, 255, 170);
+    font-size: medium;
+    border: 1px solid white;
+    border-style: dotted;
+}
+.nav-links a:active{
+    color:rgb(9, 180, 32);
+    border: 1px solid white;
+    border-style: dotted;
+} 
+@media only screen and (max-width:725px){
+    *{
+        box-sizing: border-box;
+    }
+    header{
+        padding: 0.5rem;
+        font-size: medium;
+    }
+    .nav-links{
+        float:none;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+       
+    }
+    .nav-links a{
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+        padding: 0.3rem;
+       
+    }
+    #rapid{
+        display: block;
+    }
+
+}
+@media only screen and (max-width:400px){
+    .nav-links a{
+        font-size: small;
+    }
+}
